@@ -1,7 +1,57 @@
-<title>
-    HELLO WORLD
-</title>
-<body>
-    My name is Eric Daza and this is the first
-    thing I have pushed to GitHub.
-</body>
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Relative Paths</title>
+
+    <!-- This is an absolute path and will not work-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets\style.css"
+    />
+
+    <!-- This critical line points your HTML to the CSS file. Notice the "relative" pathway  -->
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+
+    <!-- TODO: Link the three `style.css` files found in the `public` directory -->
+    <link rel="stylesheet" type="text/css" href="./assets\style.css" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" type="text/css" href="./assets\style\style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Student Bio</h1>
+    </header>
+
+    <div class="container">
+      <section id="main-bio">
+        <h2>Eric Daza</h2>
+
+        <img
+          id="bio-image"
+          src="https://omeka.emich.edu/files/large/14703/010_MJ_100_044a_copy.jpg"
+          alt="Your Name"
+        />
+
+        <p>
+          Hi, I'm Eric and I'm looking to build a portfolio that will
+        showcase what I am able to do. I work full time as a manager at
+    a local restaurant chain and am looking for something else. I enjoy
+all sorts of outdoor activities but have been restricted mostly to doing
+what I can around the neighborhood.</a>
+        </p>
+      </section>
+
+      <section id="contact-info">
+        <h2>Contact Info</h2>
+        <ul>
+          <li><strong>Email:</strong> <a href="#">ericgdaza@gmail.com</a></li>
+          <li><strong>Github:</strong> <a href="#">edaza2011</a></li>
+          <li><strong>LinkedIn:</strong> <a href="#">Coming Soon!</a></li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>
